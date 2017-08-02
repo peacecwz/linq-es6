@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="../../node_modules/mocha/mocha.css" />
+</head>
+<body>
+  <div id="mocha"></div>
+  <script src="../../node_modules/mocha/mocha.js"></script>
+  <script src="chai.js"></script>
+  <script>
+    mocha.setup('bdd');
+    var expect = chai.expect;
+  </script>
+  <script type="application/javascript;version=1.7" src="../../src/linq.js"></script>
+
+  <script type="application/javascript;version=1.7" src="../enumerable.js"></script>
+  <script type="application/javascript;version=1.7" src="../aggregate.js"></script>
+  <script type="application/javascript;version=1.7" src="../average.js"></script>
+  <script type="application/javascript;version=1.7" src="../all.js"></script>
+  <script type="application/javascript;version=1.7" src="../any.js"></script>
+  <script type="application/javascript;version=1.7" src="../concat.js"></script>
+  <script type="application/javascript;version=1.7" src="../contains.js"></script>
+  <script type="application/javascript;version=1.7" src="../count.js"></script>
+  <script type="application/javascript;version=1.7" src="../first.js"></script>
+  <script type="application/javascript;version=1.7" src="../firstOrDefault.js"></script>
+  <script type="application/javascript;version=1.7" src="../select.js"></script>
+  <script type="application/javascript;version=1.7" src="../single.js"></script>
+  <script type="application/javascript;version=1.7" src="../singleOrDefault.js"></script>
+  <script type="application/javascript;version=1.7" src="../skip.js"></script>
+  <script type="application/javascript;version=1.7" src="../take.js"></script>
+  <script type="application/javascript;version=1.7" src="../where.js"></script>
+  
+  <script type="application/javascript;version=1.7" src="../api-usages.js"></script>
+
+  <script>
+    mocha.checkLeaks();
+    mocha.globals([]);
+    mocha.run();
+  </script>
+</body>
+</html>
